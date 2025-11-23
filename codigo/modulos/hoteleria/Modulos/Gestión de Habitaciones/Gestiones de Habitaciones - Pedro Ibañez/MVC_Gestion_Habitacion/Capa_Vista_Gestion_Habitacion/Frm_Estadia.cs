@@ -324,6 +324,7 @@ namespace Capa_Vista_Gestion_Habitacion
 
             txt_Num_Huespedes.Text = dr["Cmp_Num_Huespedes"].ToString();
 
+            Chk_TieneReservación.Checked = true;
             DTP_Check_in.Value = Convert.ToDateTime(dr["Cmp_Fecha_Entrada"]);
             DTP_CheckOut.Value = DateTime.Now;
 
